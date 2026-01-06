@@ -1,7 +1,7 @@
 <%@include file="head.jsp" %>
 
 <%@ page import="java.util.List" %>
-<%@ page import="com.ksa.pfm.model.Transaction" %>
+<%@ page import="com.bha.pfm.model.Transaction" %>
 <%@ page import="java.text.DecimalFormat" %>
 
 <%-- 
@@ -88,8 +88,8 @@
                     
                     <tbody>
                         <% 
-                            List<com.ksa.pfm.model.Transaction> transactions = 
-                                (List<com.ksa.pfm.model.Transaction>) request.getAttribute("transactions");
+                            List<com.bha.pfm.model.Transaction> transactions = 
+                                (List<com.bha.pfm.model.Transaction>) request.getAttribute("transactions");
                             
                             // Re-retrieve the type for the empty/no-data message
                             String currentReportType = (String) request.getAttribute("selectedType");

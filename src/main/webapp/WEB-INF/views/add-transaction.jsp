@@ -1,7 +1,7 @@
 <%@include file="head.jsp" %>
 
 <%
-	java.util.List<com.ksa.pfm.model.Category> categories=(java.util.List<com.ksa.pfm.model.Category>) request.getAttribute("categories");
+	java.util.List<com.bha.pfm.model.Category> categories=(java.util.List<com.bha.pfm.model.Category>) request.getAttribute("categories");
 %>
   <div style="margin-top:30px;display:flex;align-item:center;justify-content:center">
 	<div class="glass-card">

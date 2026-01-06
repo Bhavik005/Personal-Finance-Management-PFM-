@@ -101,7 +101,7 @@
 <body>
 
 <%
-    com.ksa.pfm.model.Transaction txn = (com.ksa.pfm.model.Transaction) request.getAttribute("transaction");
+    com.ksa.pfm.model.Transaction txn = (com.bha.pfm.model.Transaction) request.getAttribute("transaction");
     java.util.List<com.ksa.pfm.model.Category> categories = (java.util.List<com.ksa.pfm.model.Category>) request.getAttribute("categories");
 %>
 

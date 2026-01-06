@@ -1,5 +1,5 @@
 <%
-	java.util.List<com.ksa.pfm.model.Category> categories=(java.util.List<com.ksa.pfm.model.Category>) request.getAttribute("categories");
+	java.util.List<com.ksa.pfm.model.Category> categories=(java.util.List<com.bha.pfm.model.Category>) request.getAttribute("categories");
 %>
 <%@include file="head.jsp" %>
 
@@ -24,7 +24,7 @@
 				<% 
 				if(categories!=null && !categories.isEmpty())
 				{
-					for(com.ksa.pfm.model.Category category: categories)
+					for(com.bha.pfm.model.Category category: categories)
 					{
 				%>
 						<tr>

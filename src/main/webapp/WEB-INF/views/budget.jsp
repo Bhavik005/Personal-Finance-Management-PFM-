@@ -1,8 +1,8 @@
 <%@include file="head.jsp" %>
 
 	<%
-	java.util.List<com.ksa.pfm.model.Category> categories=(java.util.List<com.ksa.pfm.model.Category>) request.getAttribute("categories");
-	java.util.List<com.ksa.pfm.model.Budget> budgets=(java.util.List<com.ksa.pfm.model.Budget>) request.getAttribute("budgets");
+	java.util.List<com.bha.pfm.model.Category> categories=(java.util.List<com.bha.pfm.model.Category>) request.getAttribute("categories");
+	java.util.List<com.bha.pfm.model.Budget> budgets=(java.util.List<com.bha.pfm.model.Budget>) request.getAttribute("budgets");
 	%>
 
 <div class="form-container">
@@ -55,7 +55,7 @@
                     <%	
                     	if(categories!=null && !categories.isEmpty())
                     	{
-                    	for(com.ksa.pfm.model.Category category : categories){
+                    	for(com.bha.pfm.model.Category category : categories){
                     %>
                     	 <option value=<%=category.getName() %> ><%=category.getName() %></option>
                     <%

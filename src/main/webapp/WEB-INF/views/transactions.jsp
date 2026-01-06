@@ -1,11 +1,11 @@
 <%@include file="head.jsp" %>
 
 <%
-    java.util.List<com.ksa.pfm.model.Category> categories =
-        (java.util.List<com.ksa.pfm.model.Category>) request.getAttribute("categories");
+    java.util.List<com.bha.pfm.model.Category> categories =
+        (java.util.List<com.bha.pfm.model.Category>) request.getAttribute("categories");
 
-    java.util.List<com.ksa.pfm.model.Transaction> txns =
-        (java.util.List<com.ksa.pfm.model.Transaction>) request.getAttribute("txns");
+    java.util.List<com.bha.pfm.model.Transaction> txns =
+        (java.util.List<com.bha.pfm.model.Transaction>) request.getAttribute("txns");
 
     com.ksa.pfm.model.TransactionType selectedType =
         (com.ksa.pfm.model.TransactionType) request.getAttribute("selectedType");
@@ -56,7 +56,7 @@
 
                 <%
                     if (categories != null && !categories.isEmpty()) {
-                        for (com.ksa.pfm.model.Category category : categories) {
+                        for (com.bha.pfm.model.Category category : categories) {
                 %>
                     <option value="<%=category.getId()%>"
                         <%= (selectedCategory != null &&
@@ -112,7 +112,7 @@
 
                         <%
                             if (txns != null && !txns.isEmpty()) {
-                                for (com.ksa.pfm.model.Transaction txn : txns) {
+                                for (com.bha.pfm.model.Transaction txn : txns) {
                         %>
                         <tr>
                             <td><%= txn.getDate() %></td>
